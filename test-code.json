@@ -1,0 +1,9 @@
+{
+    "budgetDisplayName": "disable billing",
+    "alertThresholdExceeded": 1.0,
+    "costAmount": 10.01,
+    "costIntervalStart": "2024-06-22T00:00:00Z",
+    "budgetAmount": 10.00,
+    "budgetAmountType": "SPECIFIED_AMOUNT",
+    "currencyCode": "INR"
+}
