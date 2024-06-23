@@ -36,11 +36,14 @@ const disableBillingForProject = async (projectName) => {
 
 
 cloudEvent('stopBilling', async stopBilling => {
-    const pubsubData = stopBilling.data;
-    
+    const pubsub = stopBilling.data;
+
+      const pubsubDataObj = JSON.parse(
+        Buffer.from(pubsub.message.data, 'base64').toString()
+      );
     _setAuthCredential();
-    if (pubsubData.costAmount >= pubsubData.budgetAmount) {
-            console.log("disabling billing", pubsubData.costAmount, pubsubData.budgetAmount);
+    if (pubsubDataObj.costAmount >= pubsubDataObj.budgetAmount) {
+            console.log("disabling billing", pubsubDataObj.costAmount, pubsubDataObj.budgetAmount);
             return disableBillingForProject(PROJECT_NAME);
         }
         else {

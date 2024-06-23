@@ -1,9 +1,4 @@
 {
-    "budgetDisplayName": "disable billing",
-    "alertThresholdExceeded": 1.0,
-    "costAmount": 10.01,
-    "costIntervalStart": "2024-06-22T00:00:00Z",
-    "budgetAmount": 10.00,
-    "budgetAmountType": "SPECIFIED_AMOUNT",
-    "currencyCode": "INR"
+    "data": "ewogICJidWRnZXREaXNwbGF5TmFtZSI6ICJkaXNhYmxlIGJpbGxpbmciLAogICJjb3N0QW1vdW50IjogMTAuMSwKICAiY29zdEludGVydmFsU3RhcnQiOiAiMjAyNC0wNi0wMVQwNzowMDowMFoiLAogICJidWRnZXRBbW91bnQiOiAxMC4wLAogICJidWRnZXRBbW91bnRUeXBlIjogIlNQRUNJRklFRF9BTU9VTlQiLAogICJjdXJyZW5jeUNvZGUiOiAiSU5SIgp9Cg=="
+
 }
