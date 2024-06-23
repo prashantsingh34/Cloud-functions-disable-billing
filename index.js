@@ -28,7 +28,7 @@ const disableBillingForProject = async (projectName) => {
             billingAccountName: '',
         },
     });
-
+    console.log("Billing disabled");
     return `Billing has been disabled: ${JSON.stringify(res.data)}`;
 };
 
@@ -47,7 +47,8 @@ cloudEvent('stopBilling', async stopBilling => {
             return disableBillingForProject(PROJECT_NAME);
         }
         else {
-            return 'Bill is under limit already. No need to diable billing';
+            console.log('Current amount is less than the buget set. No need to disasble billing')
+            return 'Bill is under limit already. No need to disable billing';
         }
 });
 
